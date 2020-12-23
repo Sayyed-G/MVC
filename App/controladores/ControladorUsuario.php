@@ -73,4 +73,12 @@ class ControladorUsuario
         $validacion = (strlen($cadena) == strlen($valores[0])) ? true : false;
         return $validacion;
     }
+
+    public function mostrarEstudiantes(){
+
+        $usuario = new Usuario();
+        return $usuario -> mostrarEstudiantes();
+
+    }
+
 }
